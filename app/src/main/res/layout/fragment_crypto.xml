@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<RelativeLayout
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context="com.devhima.xcrypto.Fragment.CryptoFragment">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/fragmentcryptoLinearLayout1">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Choose crypto mode:"
+				android:layout_width="wrap_content"
+				android:textSize="18sp"
+				android:padding="5dp"/>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical">
+
+				<RadioGroup
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:id="@+id/fragmentcryptoRadioGroupCryptoMode">
+
+					<RadioButton
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="Encryption mode."
+						android:layout_margin="5dp"
+						android:id="@+id/fragmentcryptoRadioButtonEncMode"/>
+
+					<RadioButton
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="Decryption mode."
+						android:layout_margin="5dp"
+						android:id="@+id/fragmentcryptoRadioButtonDecMode"/>
+
+				</RadioGroup>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_below="@id/fragmentcryptoLinearLayout1"
+			android:id="@+id/fragmentcryptoLinearLayoutKey"
+			android:layout_margin="10dp">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="CHOOSE KEY"
+				android:layout_width="match_parent"
+				android:layout_weight="1.0"
+				android:textSize="18sp"
+				android:id="@+id/fragmentcryptoButtonChooseKey"/>
+
+			<TextView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:layout_weight="7.0"
+				android:layout_margin="3dp"
+				android:id="@+id/fragmentcryptoTextViewKeyChoosed"
+				android:text="×"
+				android:textSize="36sp"
+				android:textAlignment="center"
+				android:textColor="#FF0F00"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_below="@id/fragmentcryptoLinearLayoutKey"
+			android:id="@+id/fragmentcryptoLinearLayoutFile"
+			android:layout_margin="10dp">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="CHOOSE FILE"
+				android:layout_width="match_parent"
+				android:layout_weight="1.0"
+				android:textSize="18sp"
+				android:id="@+id/fragmentcryptoButtonChooseFile"/>
+
+			<TextView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:layout_weight="7.0"
+				android:layout_margin="3dp"
+				android:id="@+id/fragmentcryptoTextViewFileChoosed"
+				android:text="×"
+				android:textSize="36sp"
+				android:textAlignment="center"
+				android:textColor="#349A31"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_below="@id/fragmentcryptoLinearLayoutFile"
+			android:layout_margin="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="File: None"
+				android:layout_width="wrap_content"
+				android:id="@+id/fragmentcryptoTextViewFileName"
+				android:textSize="22sp"
+				android:paddingBottom="5dp"
+				android:layout_marginLeft="10dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Key: None"
+				android:layout_width="wrap_content"
+				android:textSize="22sp"
+				android:paddingBottom="5dp"
+				android:id="@+id/fragmentcryptoTextViewKeyName"
+				android:layout_marginLeft="10dp"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="START"
+				android:layout_width="match_parent"
+				android:layout_margin="10dp"
+				android:id="@+id/fragmentcryptoButtonStart"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</ScrollView>
+

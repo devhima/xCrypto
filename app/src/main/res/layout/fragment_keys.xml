@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/fragmentkeysLinearLayout1">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Key Name:"
+				android:layout_width="wrap_content"
+				android:textSize="18sp"
+				android:padding="5dp"
+				android:layout_margin="5dp"/>
+
+			<EditText
+				android:layout_height="match_parent"
+				android:ems="10"
+				android:layout_width="match_parent"
+				android:hint="Enter key name here"
+				android:layout_margin="5dp"
+				android:id="@+id/fragmentkeysEditTextKeyName"
+				android:inputType="text"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_below="@id/fragmentkeysLinearLayout1"
+			android:id="@+id/fragmentkeysLinearLayout2">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Select OID:"
+				android:layout_width="wrap_content"
+				android:textSize="18sp"
+				android:padding="5dp"
+				android:layout_margin="5dp"/>
+
+			<Spinner
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:padding="5dp"
+				android:layout_margin="5dp"
+				android:id="@+id/fragmentkeysSpinnerOID"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_below="@id/fragmentkeysLinearLayout2"
+			android:id="@+id/fragmentkeysLinearLayout3"
+			android:layout_margin="10dp">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="CHOOSE PATH TO SAVE KEYS"
+				android:layout_width="match_parent"
+				android:layout_weight="1.0"
+				android:textSize="16sp"
+				android:id="@+id/fragmentkeysButtonChoosePath"/>
+
+			<TextView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:layout_weight="7.0"
+				android:layout_margin="3dp"
+				android:id="@+id/fragmentkeysTextViewPathChoosed"
+				android:text="×"
+				android:textSize="36sp"
+				android:textAlignment="center"
+				android:textColor="#349A31"/>
+
+		</LinearLayout>
+
+		<RelativeLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_below="@id/fragmentkeysLinearLayout3"
+			android:id="@+id/fragmentkeysRelativeLayout1">
+
+			<Button
+				android:layout_height="match_parent"
+				android:text="Generate keys"
+				android:layout_width="match_parent"
+				android:id="@+id/fragmentkeysButtonGenKeys"
+				android:layout_margin="10dp"
+				android:padding="10dp"/>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</ScrollView>
+
